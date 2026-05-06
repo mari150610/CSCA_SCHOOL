@@ -1,0 +1,117 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f8; /* Rosa bem clarinho para o fundo */
+    color: #4a4a4a;
+}
+
+/* Cabeçalho e Menu */
+header {
+    background-color: #ff85a2; /* Rosa principal */
+    padding: 1rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fce4ec;
+}
+
+/* Seção de Destaque (Hero) */
+.hero {
+    background: linear-gradient(rgba(255, 133, 162, 0.6), rgba(255, 133, 162, 0.6)), 
+                url('https://images.unsplash.com/photo-1523050335392-9ae86774929f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff4081; /* Rosa vibrante */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f50057;
+}
+
+/* Cards de Informação */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 133, 162, 0.2);
+    flex: 1;
+    border-top: 5px solid #ff85a2;
+}
+
+.card h3 {
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
