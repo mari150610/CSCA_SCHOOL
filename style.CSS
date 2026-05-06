@@ -1,21 +1,35 @@
-/* Configurações Gerais */
+/* Importando uma fonte mais elegante */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #fff5f8; /* Rosa bem clarinho para o fundo */
-    color: #4a4a4a;
+    background-color: #fff0f5; /* Lavender Blush (Rosa bem suave) */
+    color: #5d4037;
 }
 
-/* Cabeçalho e Menu */
+/* Faixa superior decorativa */
+.top-bar {
+    background-color: #f06292;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px 0;
+    letter-spacing: 1px;
+}
+
 header {
-    background-color: #ff85a2; /* Rosa principal */
-    padding: 1rem 5%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 15px 5%;
+    border-bottom: 3px solid #f8bbd0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
@@ -25,93 +39,48 @@ nav {
 }
 
 .logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ad1457;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
+    list-style: none;
+    gap: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: 500;
+    color: #ad1457;
+    font-weight: 400;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #fce4ec;
+    color: #f06292;
+    border-bottom: 2px solid #f06292;
 }
 
-/* Seção de Destaque (Hero) */
+/* Hero Section com efeito decorado */
 .hero {
-    background: linear-gradient(rgba(255, 133, 162, 0.6), rgba(255, 133, 162, 0.6)), 
-                url('https://images.unsplash.com/photo-1523050335392-9ae86774929f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 10px solid #f8bbd0;
+}
+
+.hero-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 30px 0 30px 0; /* Bordas assimétricas decorativas */
     text-align: center;
-    color: white;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #ff4081; /* Rosa vibrante */
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #f50057;
-}
-
-/* Cards de Informação */
-.info-cards {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 5%;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 133, 162, 0.2);
-    flex: 1;
-    border-top: 5px solid #ff85a2;
-}
-
-.card h3 {
-    color: #ff4081;
-    margin-bottom: 15px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #4a4a4a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+    border: 2px solid #f06292;
+    max-width:
