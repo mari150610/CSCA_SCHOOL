@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Santa Clara de Assis</title>
+    <title>Colégio Santa Clara de Assis | Excelência em Educar</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,39 +13,116 @@
         <nav>
             <div class="logo">Colégio Santa Clara de Assis</div>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Matrículas</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">O Colégio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#programas">Internato & Intercâmbio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Educação com Valores e Excelência</h1>
-            <p>Formando cidadãos conscientes e preparados para o futuro, inspirados pela dedicação e pelo saber.</p>
-            <a href="#" class="btn">Saiba Mais</a>
+            <span class="tag">Educação Particular de Elite</span>
+            <h1>Tradição que abraça a Inovação</h1>
+            <p>Um ambiente seguro e inspirador onde o conhecimento acadêmico se une ao desenvolvimento humano global.</p>
+            <div class="hero-btns">
+                <a href="#contato" class="btn">Agendar Visita</a>
+                <a href="#cursos" class="btn btn-outline">Ver Cursos</a>
+            </div>
         </div>
     </section>
 
-    <section class="features">
-        <div class="card">
-            <h3>Educação Infantil</h3>
-            <p>O início da jornada escolar com ludicidade e carinho.</p>
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2>Por que escolher o Santa Clara?</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Infraestrutura Premium</h3>
+                    <p>Laboratórios de última geração, complexo esportivo e salas tecnológicas projetadas para o aprendizado ativo.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Corpo Docente</h3>
+                    <p>Professores mestres e doutores focados em metodologias personalizadas para cada aluno.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Ensino Particular</h3>
+                    <p>Foco no desempenho individual, com turmas reduzidas e acompanhamento psicopedagógico contínuo.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Ensino Fundamental</h3>
-            <p>Base sólida para o desenvolvimento intelectual e social.</p>
+    </section>
+
+    <section id="cursos" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Cursos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Educação Infantil</h3>
+                    <p>Estímulos cognitivos e motores em um ambiente lúdico e bilíngue.</p>
+                </div>
+                <div class="card">
+                    <h3>Ensino Fundamental I e II</h3>
+                    <p>Desenvolvimento do pensamento crítico, lógica e projetos interdisciplinares.</p>
+                </div>
+                <div class="card">
+                    <h3>Ensino Médio High School</h3>
+                    <p>Preparação intensiva para vestibulares nacionais e universidades internacionais.</p>
+                </div>
+                <div class="card">
+                    <h3>Período Integral</h3>
+                    <p>Atividades extracurriculares, robótica, artes e esportes no contraturno.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Ensino Médio</h3>
-            <p>Foco no protagonismo e preparação para os desafios acadêmicos.</p>
+    </section>
+
+    <section id="programas" class="special-programs">
+        <div class="container">
+            <h2 class="section-title">Programas Exclusivos</h2>
+            <div class="programs-grid">
+                <div class="program-box">
+                    <div class="icon">🏠</div>
+                    <h3>Residência Estudantil (Internato)</h3>
+                    <p>Oferecemos alojamentos modernos e seguros com monitoria 24h. Ideal para alunos de outras regiões que buscam imersão total nos estudos e convivência comunitária ética.</p>
+                </div>
+                <div class="program-box">
+                    <div class="icon">🌍</div>
+                    <h3>Global Experience (Intercâmbio)</h3>
+                    <p>Parcerias com instituições na Europa e América do Norte. Nossos alunos podem vivenciar semanas de estudo fora, validando créditos e expandindo horizontes culturais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p>📍 Av. das Rosas, 1234 - Bairro Nobre</p>
+                    <p>📞 (11) 4002-8922</p>
+                    <p>✉️ secretaria@santaclaraassis.edu.br</p>
+                    <p>🕒 Seg a Sex: 07h às 19h</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu E-mail" required>
+                    <select>
+                        <option>Interesse: Matrícula</option>
+                        <option>Interesse: Internato</option>
+                        <option>Interesse: Intercâmbio</option>
+                    </select>
+                    <textarea placeholder="Sua Mensagem" rows="5"></textarea>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Colégio Santa Clara de Assis. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Colégio Santa Clara de Assis. Todos os direitos reservados. Compromisso com o futuro.</p>
     </footer>
 
 </body>
